@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Concerns | Community Water Service</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-content">
+        <a class="brand" href="list.html">
+            <div class="logo">CWM</div>
+            <div>
+                <h1>Community Water Service</h1>
+                <p>Concern Recording and Tracking System</p>
+            </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="list.html" class="active">Concerns</a>
+            <a href="form.html">Add Concern</a>
+            <a href="#">Schedules</a>
+            <a href="#">Notifications</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="page-heading">
+        <div>
+            <p class="section-label">RECORD MANAGEMENT</p>
+            <h2>Service Concerns</h2>
+            <p class="subtitle">
+                View and manage reported community water concerns.
+            </p>
+        </div>
+
+        <a href="form.html" class="button button-primary">
+            + Add Concern
+        </a>
+    </section>
+
+    <section class="summary-grid">
+        <article class="summary-card">
+            <p>Total Concerns</p>
+            <h3>5</h3>
+        </article>
+
+        <article class="summary-card">
+            <p>Pending</p>
+            <h3>2</h3>
+        </article>
+
+        <article class="summary-card">
+            <p>Assigned</p>
+            <h3>1</h3>
+        </article>
+
+        <article class="summary-card">
+            <p>In Progress</p>
+            <h3>1</h3>
+        </article>
+    </section>
+
+    <section class="content-card">
+
+        <div class="table-heading">
+            <div>
+                <h3>Concern Records</h3>
+                <p>List of submitted service concerns</p>
+            </div>
+
+            <input
+                type="search"
+                class="search-input"
+                placeholder="Search concerns..."
+                aria-label="Search concerns">
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Concern ID</th>
+                        <th>Resident</th>
+                        <th>Concern Type</th>
+                        <th>Date Reported</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Andrea De Lima</td>
+                        <td>Low Pressure</td>
+                        <td>Oct 03, 2026</td>
+                        <td><span class="priority high">High</span></td>
+                        <td><span class="status assigned">Assigned</span></td>
+                        <td>
+                            <div class="actions">
+                                <a href="form.html" class="action-link">Edit</a>
+                                <button type="button" class="delete-button">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>Wilma Briozo</td>
+                        <td>Billing</td>
+                        <td>Oct 03, 2026</td>
+                        <td><span class="priority medium">Medium</span></td>
+                        <td><span class="status progress">In Progress</span></td>
+                        <td>
+                            <div class="actions">
+                                <a href="form.html" class="action-link">Edit</a>
+                                <button type="button" class="delete-button">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Rica Iliw-Iliw</td>
+                        <td>Damaged Pipes</td>
+                        <td>Oct 03, 2026</td>
+                        <td><span class="priority high">High</span></td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>
+                            <div class="actions">
+                                <a href="form.html" class="action-link">Edit</a>
+                                <button type="button" class="delete-button">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>Jaz Diaz</td>
+                        <td>Water Interruption</td>
+                        <td>Oct 04, 2026</td>
+                        <td><span class="priority medium">Medium</span></td>
+                        <td><span class="status pending">Pending</span></td>
+                        <td>
+                            <div class="actions">
+                                <a href="form.html" class="action-link">Edit</a>
+                                <button type="button" class="delete-button">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>005</td>
+                        <td>Aya Pendon</td>
+                        <td>Water Quality</td>
+                        <td>Oct 04, 2026</td>
+                        <td><span class="priority low">Low</span></td>
+                        <td><span class="status resolved">Resolved</span></td>
+                        <td>
+                            <div class="actions">
+                                <a href="form.html" class="action-link">Edit</a>
+                                <button type="button" class="delete-button">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>Community Water Service Concern Recording and Tracking System</p>
+    <p>Ocampo, Camarines Sur</p>
+</footer>
+
+</body>
+</html>
